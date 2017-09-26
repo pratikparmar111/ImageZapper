@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{	
+	border-color:#000; 
+	padding:3px;
+	margin:0px;
+	color:#333;
+	alignment-adjust:central
+}
+.div
+{		
+	padding:0px;
+	margin:0px;
+	background-color:#CCC;
+	width:350px;
+	border-radius:10px;
+}
+.un
+{
+	border-radius:10px;
+}
+.pwd
+{
+	border-radius:10px;	
+}
+.cpwd
+{
+	border-radius:10px;
+}
+.email
+{
+	border-radius:10px;
+}
+.phone
+{
+	border-radius:10px;
+}
+.dob
+{	
+	border-radius:10px;
+}
+.country
+{
+	border-radius:10px;
+}
+.state
+{	
+	border-radius:10px;
+}
+.city
+{
+	border-radius:10px;
+}
+.gender
+{	
+	border-radius:10px;
+}
+.register
+{
+	border-radius:10px;
+	color:#000;
+}
+.infolist
+{
+	background-color:#FFF;
+	border-radius:10px;
+}
+.infolist:hover
+{
+	color:#FFF;
+	background:#39C;
+}

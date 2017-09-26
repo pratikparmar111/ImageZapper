@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="jquery/jRating.jquery.css" media="screen" />
+<!-- jQuery files -->
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="jquery/jRating.jquery.js"></script>
+<script type="text/javascript" src="jquery/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="jquery/jRating.jquery.min.js"></script>
+
+
+</head>
+
+<body>
+Exemple 1 (Basic exemple without options) :
+<!-- HTML CODE -->
+<div class="basic" data-average="12" data-id="1"></div>
+
+<!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+	$(".basic").jRating();
+  });
+</script>
+
+
+
+Exemple 2 (type : small - average 10 - id 2 - 40 stars) :
+<div class="exemple2" data-average="3" data-id="2" id="xx"></div>
+
+<!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+	$(".exemple2").jRating({
+	  type:'small', // type of the rate.. can be set to 'small' or 'big'
+	  length : 5, // nb of stars
+	  rateMax : 5,
+	  
+	  decimalLength : 1 // number of decimal in the rate
+	});
+  });
+</script>
+
+Exemple 3 (step : true - average 18 - id 2 - 15 stars) :
+<!-- HTML CODE -->
+<div class="exemple3" data-average="18" data-id="3"></div>
+
+<!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+	$(".exemple3").jRating({
+	  step:true,
+	  length : 20, // nb of stars
+	  decimalLength:0 // number of decimal in the rate
+	});
+  });
+</script>
+
+
+
+
+
+Exemple 4 (Rate is disabled) :
+<div class="exemple4" data-average="10" data-id="4"></div>
+
+<!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+	$(".exemple4").jRating({
+	  isDisabled : true
+	});
+  });
+</script>
+
+
+
+Exemple 6 (jRating & jNotify plugins !!) :
+<div class="exemple6" data-average="10" data-id="6"></div>
+
+<!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+	$(".exemple6").jRating({
+	  onSuccess : function(){
+		jSuccess('Success : your rate has been saved :)',{
+		  HorizontalPosition:'center',
+		  VerticalPosition:'top'
+		});
+	  },
+	  onError : function(){
+		jError('Error : please retry');
+	  }
+	});
+  });
+</script>
+
+
+
+Exemple 7 (Rate infos disabled) :
+<div class="exemple7" data-average="12" data-id="7"></div>
+
+<!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+	$(".exemple7").jRating({
+	  showRateInfo:false
+	});
+  });
+</script>
+
+
+Exemple 8 (Can rate 3 times !) :
+<div class="exemple8" data-average="10" data-id="8"></div>
+
+<!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".exemple8").jRating({
+	  step:true,
+	  length : 20,
+	  canRateAgain : true,
+	  nbRates : 3
+	});
+  });
+</script>
+
+
+
+
+Exemple 6 (jRating & jNotify plugins !!)
+<!-- HTML CODE -->
+<div class="exemple6" data-average="10" data-id="6"></div>
+
+<!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+	$(".exemple6").jRating({
+	  onSuccess : function(){
+		jSuccess('Success : your rate has been saved :)',{
+		  HorizontalPosition:'center',
+		  VerticalPosition:'top'
+		});
+	  },
+	  onError : function(){
+		jError('Error : please retry');
+	  }
+	});
+  });
+</script>
+
+
+</body>
+
+</html>

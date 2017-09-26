@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	
+	
+}
+.main
+{
+	background-color:#5867F1;
+}
+.button
+{
+	background-color:transparent;
+}
+.title
+{
+
+	background-color:#03C;
+	color:#FFF;
+}
+.Userpass
+{
+	color:#60C;
+	background-color:#CFC;
+	border-radius:10px;
+}
